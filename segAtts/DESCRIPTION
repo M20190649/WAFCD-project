@@ -5,5 +5,7 @@ Version: 1.0
 Date: 2015-03-13
 Author: Nikolai Gorte
 Maintainer: Nikolai Gorte <n.gorte@gmeil.com>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Description: Pre-process the tracks for the project.
+Depends: R (>= 2.14.0)
+Imports: enviroCaR, fuzzyMM(> 1.0.1), rgeos
+License: GPL (>= 2)
