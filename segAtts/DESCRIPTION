@@ -6,6 +6,6 @@ Date: 2015-03-13
 Author: Nikolai Gorte
 Maintainer: Nikolai Gorte <n.gorte@gmeil.com>
 Description: Pre-process the tracks for the project.
-Depends: R (>= 2.14.0)
-Imports: enviroCaR, fuzzyMM(> 1.0.1), rgeos
+Depends: R (>= 2.14.0), enviroCaR, fuzzyMM(> 1.0.1)
+Imports: rgeos
 License: GPL (>= 2)

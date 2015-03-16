@@ -23,9 +23,9 @@ filterTracks <- function(trcol, area) {
 ## match tracks to segments, ignore tracks that cant be mached
 ## returns list of Track objects
 ## match tracks to segments
-matchTracks <- function(trcol, DRN = NULL, n = 1, m = dim(trcol)[[1]]) {
+matchTracks <- function(trcol, DRN = NULL, m = 1, n = dim(trcol)[[1]]) {
   mm_tracks <- list()
-  for (i in 1:n) {
+  for (i in m:n) {
     try(mm_tracks <- c(mm_tracks, mm(trcol[i][1], FALSE, DRN)))
   }
   mm_tracks
