@@ -7,5 +7,5 @@ Author: Nikolai Gorte
 Maintainer: Nikolai Gorte <n.gorte@gmeil.com>
 Description: Pre-process the tracks for the project.
 Depends: R (>= 2.14.0), enviroCaR, fuzzyMM(> 1.0.1)
-Imports: rgeos
+Imports: rgeos, trajectories, sp, spacetime
 License: GPL (>= 2)

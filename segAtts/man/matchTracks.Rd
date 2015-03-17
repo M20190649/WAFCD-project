@@ -5,10 +5,10 @@
 Match tracks
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Match tracks to the road network and ignore the once producing errors.
 }
 \usage{
-matchTracks(trcol, DRN = NULL, n = 1, m = dim(trcol)[[1]])
+matchTracks(trcol, DRN = NULL, m = 1, n = dim(trcol)[[1]])
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,16 +18,14 @@ TrackCollection.
   \item{DRN}{
 Digital road network created by \link{create_drn}.
 }
-  \item{n}{
+  \item{m}{
 Interval start, see Details.
 }
-  \item{m}{
+  \item{n}{
 Interval end, see Details. 
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 List with matched \link{Track} objects.
 }

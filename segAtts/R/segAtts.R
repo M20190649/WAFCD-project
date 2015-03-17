@@ -30,3 +30,11 @@ matchTracks <- function(trcol, DRN = NULL, m = 1, n = dim(trcol)[[1]]) {
   }
   mm_tracks
 }
+
+## get segments ids and measured values
+getValues <- function(mm_tracks, atts = c("OSM_ID", "time", "Speed", "GPS.Bearing")) {
+  seg_values <- do.call(rbind,lapply(mm_tracks, function(track) track@data[atts]))
+  seg_values <- seg_values[!seg_values$OSM_ID == 0,]
+  seg_values <- seg_values[!seg_values$Speed == 0,]
+  seg_values
+}

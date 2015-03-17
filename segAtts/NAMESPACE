@@ -1,8 +1,11 @@
 import(enviroCaR)
 import(fuzzyMM)
 import(rgeos)
+import(sp)
+import(trajectories)
 
 export(filterTracks)
 export(getTracks)
 export(matchTracks)
+export(getValues)
 
